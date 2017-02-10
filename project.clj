@@ -8,5 +8,7 @@
                  [ch.qos.logback/logback-classic "1.2.1"]]
 
   :main jvm-playground.logging
-
+  :source-paths ["src"]
+  :java-source-paths ["src"]
+  :javac-options ["-target" "1.6" "-source" "1.6"]
   :jvm-opts ["-Xmx2g" "-server" "-Xms1g"])
